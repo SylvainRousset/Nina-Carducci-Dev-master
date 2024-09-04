@@ -99,6 +99,8 @@ body {
 }
 .gallery .nav {
 	justify-content: center;
+	cursor: pointer;
+	
 }
 /*---------------------modif img-------------------------*/
 .img-fluid {
@@ -113,6 +115,7 @@ body {
 	color: black;
 	background-color: #BEB45A;
 	border-radius:0 ;
+	
 }
 .nav-pills .nav-link {
 	color: #000
@@ -134,6 +137,7 @@ body {
 	height: 100%;
 	object-fit: cover;
 	padding: .5em;
+	cursor: pointer;
 }
 
 .mg-prev, .mg-next {
@@ -144,6 +148,7 @@ body {
 	align-items: center;
 	display: flex;
 	font-size: 24px;
+	cursor: pointer;
 }
 /* Amélioration du contraste pour les boutons de navigation du carrousel */
 .carousel-control-prev-icon,
