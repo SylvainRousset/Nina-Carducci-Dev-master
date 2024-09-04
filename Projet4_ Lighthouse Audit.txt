@@ -1,0 +1,66 @@
+﻿1. Introduction
+Ce document répertorie les modifications à apporter au site pour améliorer son référencement naturel (SEO) et ses performances, selon les recommandations issues de l'audit Lighthouse et des meilleures pratiques SEO. 
+________________
+
+
+2. Performance
+A. Optimiser le Largest Contentful Paint (LCP)
+* Problème : 
+   * Temps de chargement du plus grand élément visuel très long (18,1 s).
+   * Dimensions des images trop importantes : 6000x2500 pixels.
+* Solution :
+   * Redimensionnement des images à 860 pixels.
+* Résultat :
+   * Temps de chargement réduit à 1,2 s.
+   * Score de performance Lighthouse : 97%.
+* * Priorité : Haute
+* Statut : fait
+________________
+
+
+3. SEO
+* Problème : 
+   * Absence de balise <title> et de meta description.
+   * Absence de balise <robots>.
+        Solution :
+   * Ajout d’ une balise <title>, ainsi qu'une meta description descriptive.
+   * Ajout d’ une balise <robots>.<meta name="robots" content="index, follow">
+   * ________________
+
+
+4. REFERENCEMENT LOCAL ET RESEAUX SOCIAUX
+* Problème : 
+   * erreur dans le HTML pour validation au standard
+   * Pas de H1 et pas de H2 des H qui devraient être des p : mauvaise hiérarchie.
+   * pas de Schema.org pour le référencement local.
+   * Manque de balise meta:robots, description,Facebook,X. 
+* Solution :
+   * Modification du html aucune erreur au validateur.
+   * Ajout d ‘un H1 ainsi que modification du titre, 
+   * ajout des H2 pour les sous titres,modification de h3 en p,remplacement de h6 par des h3.
+   * Ajout des microdonnées Schema.org pour le type LocalBusiness, incluant des informations telles que le nom de l'entreprise, l'adresse, le numéro de téléphone et les heures d'ouverture, afin d'améliorer le référencement local.
+* Résultat :
+   * Amélioration du référencement.
+________________
+
+
+5. ACCESSIBILITÉ
+* Problème : 
+   * Pas de texte alternatif pour les images.
+   * Mauvais contraste de couleur
+   * pas de landmarks ARIA pour la structure du contenu.
+* Solution :
+   * Ajout de l'attribut alt aux images pour la description.
+   * Changement de couleurs de texte en noir meilleur contraste.
+   * Ajout des  balises ARIA landmarks banner, navigation, main, footer.
+* Résultat :
+   * Amélioration ACCESSIBILITÉ.
+
+
+6. Fonctionnement 
+* Problème :
+   * Les images ne changent pas dans le carrousel.
+   * Couleur des  boutons filtre ne change pas de couleur.
+* Solution :
+   * L'index ne se met pas à jour. Ajout de +1 pour le bouton "Suivant" et -1 pour le bouton "Précédent".
+   * Ajout de la classe nav-link.active-tag avec un background-color doré.
