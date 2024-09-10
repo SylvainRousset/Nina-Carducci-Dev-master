@@ -145,22 +145,24 @@
           }
         });
       }
+
+//------- prev modif
+
       let index = 0,
-        next = null;
-
-
+        prev = null;
       $(imagesCollection).each(function(i) {
         if ($(activeImage).attr("src") === $(this).attr("src")) {
-          index = i -1 ;
+          index = i ;
         }
       });
-
-
-      next =
-        imagesCollection[index] ||
+      prev =
+        imagesCollection[index -1] ||
         imagesCollection[imagesCollection.length - 1];
-      $(".lightboxImage").attr("src", $(next).attr("src"));
+      $(".lightboxImage").attr("src", $(prev).attr("src"));
     },
+    
+    
+    
     nextImage() {
       let activeImage = null;
       $("img.gallery-item").each(function() {
@@ -187,16 +189,16 @@
           }
         });
       }
+
+        //-----Next modif
+
       let index = 0,
         next = null;
-
       $(imagesCollection).each(function(i) {
         if ($(activeImage).attr("src") === $(this).attr("src")) {
           index = i;
         }
       });
-
-
       next = imagesCollection[index +1] || imagesCollection[0];
       $(".lightboxImage").attr("src", $(next).attr("src"));
     },
@@ -242,6 +244,10 @@
         console.error(`Unknown tags position: ${position}`);
       }
     },
+
+
+    // active tag
+    
     filterByTag() {
       if ($(this).hasClass("active-tag")) {
         return;
