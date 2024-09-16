@@ -102,15 +102,7 @@ body {
 	cursor: pointer;
 	
 }
-/*---------------------modif img-------------------------*/
-.img-fluid {
-    height: 600px;             
-    width: 100%;               
-    object-fit: cover;         
-    aspect-ratio: 16/9;         
-    display: block;
-    margin: 0 auto;
-}
+
 .nav-pills .nav-link.active, .nav-pills .show > .nav-link {
 	color: black;
 	background-color: #BEB45A;
